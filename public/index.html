@@ -79,7 +79,7 @@
 
       function render(randomlySortedChickens) {
         primary.innerText = randomlySortedChickens.shift()
-        backups.innerHTML = `<p>Buck-buck-backUPS</p>${[0, 1, 2, 3].map(_ => randomlySortedChickens.shift().bold()).join('<br>')}`;
+        backups.innerHTML = `<p>Pecking Order:</p>${[0, 1, 2, 3].map(_ => randomlySortedChickens.shift().bold()).join('<br>')}`;
         
         contents.classList.remove("loading")
       }
