@@ -21,7 +21,6 @@ const potentialChickens = [
   { id: "U0274DF37", name: "Mac" },
   { id: "U0K8Z1KD1", name: "Melissa" },
   { id: "U44G2GD4M", name: "Usama" },
-  { id: "UFM0UL2GG", name: "Z" },
 ]
 
 function getChickens(day) {
