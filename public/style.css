@@ -42,15 +42,16 @@ div.shell {
 
 .electron::after {
   content: "🐓";
+  animation: 1.5s infinite linear electronRotate_;
 }
 
 @keyframes electron_ {
   0% {
-    transform: translateX(0) translateY(-112px) scale(1);
+    transform: translateX(0) translateY(-112px) scale(0.8);
   }
 
   25% {
-    transform: translateX(32px) translateY(0px) scale(0.9);
+    transform: translateX(32px) translateY(0px) scale(1);
   }
 
   50% {
@@ -58,10 +59,20 @@ div.shell {
   }
 
   75% {
-    transform: translateX(-32px) translateY(0px) scale(0.9);
+    transform: translateX(-32px) translateY(0px) scale(0.6);
   }
 
   100% {
-    transform: translateX(0) translateY(-112px) scale(1);
+    transform: translateX(0) translateY(-112px) scale(0.8);
+  }
+}
+
+@keyframes electronRotate_ {
+  0% {
+    transform: rotate(0);
+  }
+
+  100% {
+    transform: rotate(360deg);
   }
 }
